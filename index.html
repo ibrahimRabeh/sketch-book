@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Sketch-Book</title>
+    <script
+      src="https://code.jquery.com/jquery-1.12.4.min.js"
+      integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="custom-hex-color-picker/style.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="custom-hex-color-picker/CustomHexColorPicker.lib.js"></script>
+  </head>
+  <body>
+    <h1>Sketching time</h1>
+
+    <div id="options-container">
+      <button class="colorInput" data-color="transparent">select color</button>
+    </div>
+    <div class="drawingAndSize">
+      <div class="slidecontainer">
+        <input
+          type="range"
+          min="1"
+          max="100"
+          value="16"
+          class="slider"
+          id="myRange"
+        />
+      </div>
+      <div id="demo"></div>
+      <div id="drawing-container"></div>
+    </div>
+    <button id="ResetButton"></button>
+  </body>
+  <script src="sketch.js"></script>
+</html>

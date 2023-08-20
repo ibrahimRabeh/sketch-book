@@ -1,0 +1,173 @@
+* {
+  background-color: #c0ffeb;
+}
+
+body {
+  text-align: center;
+  padding: 25%;
+  width: 30%;
+
+}
+
+h1 {
+  margin-top: -25%;
+  padding: 20px;
+  color: rgb(0, 61, 34);
+
+  border-radius: 15px;
+}
+
+#options-container {
+
+  display: flex;
+}
+
+
+
+button {
+  align-items: center;
+  background-image: linear-gradient(144deg, #AF40FF, #5B42F3 50%, #00DDEB);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 80%;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+
+  padding: 10px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+  flex: 1;
+}
+
+button:active,
+button:hover {
+  outline: 0;
+}
+
+button span {
+  background-color: rgb(5, 6, 45);
+  padding: 30px 24px;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  transition: 300ms;
+}
+
+button:hover span {
+  background: none;
+}
+
+@media (min-width: 768px) {
+  button {
+    
+    
+  }
+}
+
+.drawingAndsize {
+  display: flex;
+  flex-direction: row;
+}
+
+.slidecontainer {
+  width: 100%;
+  /* Width of the outside container */
+}
+
+/* The slider itself */
+.slider {
+  -webkit-appearance: none;
+  /* Override default CSS styles */
+  appearance: none;
+  width: 100%;
+  /* Full-width */
+  height: 25px;
+  /* Specified height */
+  background: #d3d3d3;
+  /* Grey background */
+  outline: none;
+  /* Remove outline */
+  opacity: 0.7;
+  /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s;
+  /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+  opacity: 1;
+  /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  /* Override default look */
+  appearance: none;
+  width: 25px;
+  /* Set a specific slider handle width */
+  height: 25px;
+  /* Slider handle height */
+  background: #04AA6D;
+  /* Green background */
+  cursor: pointer;
+  /* Cursor on hover */
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  /* Set a specific slider handle width */
+  height: 25px;
+  /* Slider handle height */
+  background: #04AA6D;
+  /* Green background */
+  cursor: pointer;
+  /* Cursor on hover */
+}
+
+#size {
+  flex: 1;
+}
+
+#drawing-container {
+  margin-top: 1%;
+  display: flex;
+  text-align: center;
+  
+
+
+}
+
+.PixelsHar {
+
+  background-color: rgb(233, 233, 233);
+
+  padding: 50%;
+  flex: 1;
+
+
+
+
+
+}
+
+.PixelsVar {
+  flex: 1;
+
+}
+
+.color {
+
+  background-color: black;
+}
